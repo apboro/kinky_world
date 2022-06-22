@@ -5,7 +5,6 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 100%;
 }
 
 code {
@@ -13,7 +12,17 @@ code {
 		monospace;
 }
 
+html,
+body {
+	height: 100%;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
 .container {
 	padding: 20px;
-	height: 70vh;
+	flex: 1 0 auto;
 }

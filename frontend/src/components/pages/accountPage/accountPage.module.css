@@ -1,0 +1,26 @@
+.header {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	grid-template-areas:
+		'avatar userInfo'
+		'menu menu';
+	gap: 15px;
+}
+
+.avatar {
+	grid-area: avatar;
+	height: 200px;
+	border: 2px solid salmon;
+}
+
+.userInfo {
+	grid-area: userInfo;
+	height: 200px;
+	border: 2px solid seagreen;
+}
+
+.menu {
+	grid-area: menu;
+	height: 50px;
+	border: 2px solid sandybrown;
+}
