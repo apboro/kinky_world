@@ -10,8 +10,8 @@ import { DatingPage } from './pages/datingPage';
 import { ShopsPage } from './pages/shopsPage';
 import { KinkbnbPage } from './pages/kinkbnbPage';
 import { ClubsPage } from './pages/clubsPage/clubsPage';
-import { ProfilePage } from './pages/profilePage/profilePage';
 import { Footer } from './common/footer/footer';
+import { AccountPage } from './pages/accountPage/accountPage';
 
 export const App = () => {
 	return (
@@ -28,7 +28,7 @@ export const App = () => {
 				<Route path='/shops' element={<ShopsPage />} />
 				<Route path='/clubs' element={<ClubsPage />} />
 				<Route path='/about' element={<AboutUsPage />} />
-				<Route path='/profile' element={<ProfilePage />} />
+				<Route path='/account' element={<AccountPage />} />
 			</Routes>
 
 			<Footer />
