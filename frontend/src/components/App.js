@@ -2,25 +2,29 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './common/header';
 import { AboutUsPage } from './pages/aboutUsPage';
-import { EventsPage } from './pages/eventsPage';
+import { PartiesPage } from './pages/partiesPage';
 import { ForumPage } from './pages/forumPage';
-import { GroupsPage } from './pages/groupsPage';
+import { BlogsPage } from './pages/blogsPage';
 import { MainPage } from './pages/mainPage';
-import { MembersPage } from './pages/membersPage';
+import { DatingPage } from './pages/datingPage';
+import { ShopsPage } from './pages/shopsPage';
+import { KinkbnbPage } from './pages/kinkbnbPage';
 
 export const App = () => {
 	return (
 		<>
-			<Header />
+			{<Header />}
 			<Routes>
 				<Route path='/' element={<MainPage />} />
 				<Route path='/about' element={<AboutUsPage />} />
-				<Route path='/members' element={<MembersPage />} />
-				<Route path='/dates' element={<MainPage />} />
-				<Route path='/events' element={<EventsPage />} />
+				<Route path='/kinkbnb' element={<KinkbnbPage />} />
+				<Route path='/dating' element={<DatingPage />} />
+				<Route path='/parties' element={<PartiesPage />} />
 				<Route path='/forum' element={<ForumPage />} />
-				<Route path='/groups' element={<GroupsPage />} />
+				<Route path='/blogs' element={<BlogsPage />} />
+				<Route path='/shops' element={<ShopsPage />} />
 			</Routes>
+
 		</>
 	);
 };
