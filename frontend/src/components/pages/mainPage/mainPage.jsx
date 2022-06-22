@@ -1,9 +1,14 @@
 import React from 'react';
+import style from './mainPage.module.css';
 
 export const MainPage = (props) => {
 	return (
-		<>
-			<h1>Main page</h1>
-		</>
+		<main className={`container ${style.container}`}>
+			<div className={`${style.blue}`}>1</div>
+
+			<div className={`${style.green}`}>2</div>
+
+			<div className={`${style.red}`}>3</div>
+		</main>
 	);
 };

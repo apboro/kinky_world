@@ -9,22 +9,29 @@ import { MainPage } from './pages/mainPage';
 import { DatingPage } from './pages/datingPage';
 import { ShopsPage } from './pages/shopsPage';
 import { KinkbnbPage } from './pages/kinkbnbPage';
+import { ClubsPage } from './pages/clubsPage/clubsPage';
+import { ProfilePage } from './pages/profilePage/profilePage';
+import { Footer } from './common/footer/footer';
 
 export const App = () => {
 	return (
 		<>
-			{<Header />}
+			<Header />
+
 			<Routes>
 				<Route path='/' element={<MainPage />} />
-				<Route path='/about' element={<AboutUsPage />} />
-				<Route path='/kinkbnb' element={<KinkbnbPage />} />
 				<Route path='/dating' element={<DatingPage />} />
+				<Route path='/kinkbnb' element={<KinkbnbPage />} />
 				<Route path='/parties' element={<PartiesPage />} />
 				<Route path='/forum' element={<ForumPage />} />
 				<Route path='/blogs' element={<BlogsPage />} />
 				<Route path='/shops' element={<ShopsPage />} />
+				<Route path='/clubs' element={<ClubsPage />} />
+				<Route path='/about' element={<AboutUsPage />} />
+				<Route path='/profile' element={<ProfilePage />} />
 			</Routes>
 
+			<Footer />
 		</>
 	);
 };

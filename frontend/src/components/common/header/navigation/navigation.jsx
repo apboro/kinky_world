@@ -12,7 +12,7 @@ export const Navigation = (props) => {
 				KinkBNB
 			</NavLink>
 			<NavLink className={`${style.item}`} to='/parties'>
-			Parties
+				Parties
 			</NavLink>
 			<NavLink className={`${style.item}`} to='/forum'>
 				Forum
@@ -23,8 +23,14 @@ export const Navigation = (props) => {
 			<NavLink className={`${style.item}`} to='/shops'>
 				Shops
 			</NavLink>
+			<NavLink className={`${style.item}`} to='/clubs'>
+				Clubs
+			</NavLink>
 			<NavLink className={`${style.item}`} to='/about'>
 				About Us
+			</NavLink>
+			<NavLink className={`${style.item}`} to='/profile'>
+				My profile
 			</NavLink>
 		</nav>
 	);

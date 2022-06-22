@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './blogsPage.module.css';
+import style from './clubsPage.module.css';
 
-export const BlogsPage = (props) => {
+export const ClubsPage = (props) => {
 	return (
 		<div className={`container ${style.container}`}>
 			<div className={`${style.filter}`}>filter</div>
 
-			<div className={`${style.blogsList}`}>Blog list</div>
+			<div className={`${style.clubsList}`}>Clabs list</div>
 		</div>
 	);
 };

@@ -1,9 +1,12 @@
 import React from 'react';
+import style from './datingPage.module.css';
 
 export const DatingPage = (props) => {
 	return (
-		<>
-			<h1>Dating page</h1>
-		</>
+		<div className={`container`}>
+			<div className={`${style.filter}`}>Filter</div>
+
+			<div className={`${style.cards}`}>Users cards</div>
+		</div>
 	);
 };

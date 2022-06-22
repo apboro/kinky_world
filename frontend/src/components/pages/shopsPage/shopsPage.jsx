@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const ShopsPage = (props) => {
-    return (
-        <>
-            <h1>Shops page</h1>
-        </>
-    );
+	return (
+		<div className={`container`}>
+			<h1>Shops page</h1>
+		</div>
+	);
 };
