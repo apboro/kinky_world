@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->date('date_of_birth');
+            $table->enum('essence', ['Man', 'Woman', 'Couple', 'Non-binary', 'Transvestite', 'Else']);
             $table->rememberToken();
             $table->timestamps();
         });
