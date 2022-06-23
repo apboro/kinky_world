@@ -29,7 +29,7 @@ export const Navigation = (props) => {
 			<NavLink className={`${style.item}`} to='/about'>
 				About Us
 			</NavLink>
-			<NavLink className={`${style.item}`} to='/account'>
+			<NavLink className={`${style.item}`} to='/account/'>
 				My account
 			</NavLink>
 		</nav>

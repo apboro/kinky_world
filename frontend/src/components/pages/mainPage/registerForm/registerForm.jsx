@@ -8,8 +8,8 @@ export const RegisterForm = (props) => {
 				<span>First time in KinkBNB?</span>
 
 				<span>I am:</span>
-				<select>
-					<option selected>Please select...</option>
+				<select defaultValue={'default'}>
+					<option value='default'>Please select...</option>
 					<option>Woman</option>
 					<option>Man</option>
 					<option>Couple</option>
@@ -42,8 +42,8 @@ export const RegisterForm = (props) => {
 
 				<span>My date of birth</span>
 				<div>
-					<select>
-						<option selected>Day</option>
+					<select defaultValue={'default'}>
+						<option value='default'>Day</option>
 						<option value='01'>01</option>
 						<option value='02'>02</option>
 						<option value='03'>03</option>
@@ -77,8 +77,8 @@ export const RegisterForm = (props) => {
 						<option value='31'>31</option>
 					</select>
 
-					<select>
-						<option selected>Month</option>
+					<select defaultValue={'default'}>
+						<option value='default'>Month</option>
 						<option value='01'>01</option>
 						<option value='02'>02</option>
 						<option value='03'>03</option>
@@ -93,8 +93,8 @@ export const RegisterForm = (props) => {
 						<option value='12'>12</option>
 					</select>
 
-					<select>
-						<option selected>Year</option>
+					<select defaultValue={'default'}>
+						<option value='default'>Year</option>
 						<option value='2004'>2004</option>
 						<option value='2003'>2003</option>
 						<option value='2002'>2002</option>
