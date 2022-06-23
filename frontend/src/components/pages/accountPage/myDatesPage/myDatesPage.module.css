@@ -1,0 +1,18 @@
+.header {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	grid-template-areas: 'infoBlock datesInfo';
+	gap: 15px;
+}
+
+.infoBlock {
+	grid-area: infoBlock;
+	height: 200px;
+	border: 2px solid salmon;
+}
+
+.datesInfo {
+	grid-area: datesInfo;
+	height: 200px;
+	border: 2px solid seagreen;
+}
