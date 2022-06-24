@@ -2,9 +2,28 @@ import React from 'react';
 import style from './registerForm.module.css';
 
 export const RegisterForm = (props) => {
+	const requestOptions = {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ city: 'Moscow' })
+	};
+	fetch('http://kinkyapi.alevi.space/api/user/add', requestOptions)
+		.then(response => response.json())
+		.then(data => this.setState({ postId: data.id }));
+
+
+	function handleRegistrationForm(event){
+		event.preventDefault();
+		console.log('hi');
+		fetch('http://kinkyapi.alevi.space/api/user/add', requestOptions)
+			.then(response => response.json())
+			.then(data => console.log(data));
+	}
+
+
 	return (
 		<div className={`${style.container}`}>
-			<form className={`${style.form}`}>
+			<form onSubmit={handleRegistrationForm} className={`${style.form}`}>
 				<span>First time in KinkBNB?</span>
 
 				<span>I am:</span>
@@ -171,7 +190,7 @@ export const RegisterForm = (props) => {
 					</select>
 				</div>
 
-				<button>Register</button>
+				<button type='submit'>Register</button>
 			</form>
 		</div>
 	);
