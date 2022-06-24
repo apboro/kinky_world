@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Response;
 use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,9 +17,17 @@ use App\Models\User;
 */
 //middleware('auth:sanctum')->
 Route::get('/user', function () {
-    $user=User::get();
-    return response()->json([
-        'name' => 'Abigail',
-        'state' => 'CA',
-    ]);
+    $user = User::all();
+    return response()->json($user
+//        [
+//        [
+//            'name' => 'Abigail',
+//            'state' => 'CA',
+//        ],
+//        [
+//            'name' => 'Alfredo',
+//            'state' => 'SU',
+//        ]
+//    ]
+    );
 });
