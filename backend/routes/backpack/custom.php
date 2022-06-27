@@ -16,4 +16,17 @@ Route::group([
     ),
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::crud('user', 'UserCrudController');
+    Route::crud('about-us', 'AboutUsCrudController');
+    Route::crud('blog', 'BlogCrudController');
+    Route::crud('fetish', 'FetishCrudController');
+    Route::crud('kinkbnb-media', 'KinkbnbMediaCrudController');
+    Route::crud('kinkbnb-object', 'KinkbnbObjectCrudController');
+    Route::crud('kinkbnb-transaction', 'KinkbnbTransactionCrudController');
+    Route::crud('party', 'PartyCrudController');
+    Route::crud('party-transaction', 'PartyTransactionCrudController');
+    Route::crud('shop', 'ShopCrudController');
+    Route::crud('user-fetish', 'UserFetishCrudController');
+    Route::crud('user-media', 'UserMediaCrudController');
+    Route::crud('user-relation', 'UserRelationCrudController');
 }); // this should be the absolute last line of this file
