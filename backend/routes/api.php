@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Response;
 use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,11 +15,8 @@ use App\Models\User;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//middleware('auth:sanctum')->
-Route::get('/user', function () {
-    $user=User::get();
-    return response()->json([
-        'name' => 'Abigail',
-        'state' => 'CA',
-    ]);
-});
+
+Route::apiResources([
+    'users' => \App\Http\Controllers\UserController::class,
+    'languages' =>\App\Http\Controllers\LanguageController::class,
+]);

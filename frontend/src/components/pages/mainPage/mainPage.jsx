@@ -5,10 +5,11 @@ import { RegisterForm } from './registerForm/registerForm';
 export const MainPage = (props) => {
 	const [users, setUsers] = useState('pups');
 	useEffect( () => {
- 		     fetch('http://kinkyapi.alevi.space/api/user')
+ 		     fetch('https://kinkyapi.alevi.space/api/users')
 			.then((response) => response.json())
 			.then((actualData)=>setUsers(actualData)
 			)},[]);
+
 	function handleClick(){
 		console.log(users)
 	}
