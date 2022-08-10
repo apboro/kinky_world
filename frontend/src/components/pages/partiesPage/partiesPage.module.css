@@ -1,0 +1,15 @@
+.filter {
+	margin: 0 0 15px 0;
+	height: 15%;
+	border: 2px solid salmon;
+}
+
+.nextEvent {
+	margin: 0 0 15px 0;
+	height: 30%;
+	border: 2px solid rgb(124, 207, 75);
+}
+.events {
+	height: 50%;
+	border: 2px solid rgb(41, 183, 226);
+}

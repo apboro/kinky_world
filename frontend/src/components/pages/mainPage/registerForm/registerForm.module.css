@@ -1,0 +1,14 @@
+.container {
+	padding: 10px;
+	max-width: 40%;
+	border: 1px solid saddlebrown;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.interested {
+	display: flex;
+}

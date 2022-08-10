@@ -1,0 +1,10 @@
+.filter {
+	margin: 0 0 15px 0;
+	height: 20%;
+	border: 2px solid blue;
+}
+
+.cards {
+	height: 80%;
+	border: 2px solid red;
+}

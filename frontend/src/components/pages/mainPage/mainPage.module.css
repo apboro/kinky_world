@@ -1,0 +1,23 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		'one two'
+		'three three';
+	gap: 15px;
+}
+
+.blue {
+	grid-area: one;
+	border: 2px solid rgb(0, 193, 252);
+}
+
+.green {
+	grid-area: two;
+	border: 2px solid rgb(42, 236, 68);
+}
+
+.red {
+	grid-area: three;
+	border: 2px solid rgb(224, 91, 91);
+}
