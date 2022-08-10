@@ -38,5 +38,6 @@ class DatabaseSeeder extends Seeder
         $this->call([UserFetishSeeder::class]);
         $this->call([UserMediaSeeder::class]);
         $this->call([UserRelationSeeder::class]);
+        $this->call([LanguageSeeder::class]);
     }
 }

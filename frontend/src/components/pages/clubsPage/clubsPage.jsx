@@ -6,7 +6,7 @@ export const ClubsPage = (props) => {
 		<div className={`container ${style.container}`}>
 			<div className={`${style.filter}`}>filter</div>
 
-			<div className={`${style.clubsList}`}>Clabs list</div>
+			<div className={`${style.clubsList}`}>Clubs list</div>
 		</div>
 	);
 };

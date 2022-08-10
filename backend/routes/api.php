@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Response;
 use App\Models\User;
 
 /*
@@ -15,6 +16,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/user', function () {
-    return User::get();
-});
+Route::apiResources([
+    'users' => \App\Http\Controllers\UserController::class,
+    'languages' =>\App\Http\Controllers\LanguageController::class,
+]);

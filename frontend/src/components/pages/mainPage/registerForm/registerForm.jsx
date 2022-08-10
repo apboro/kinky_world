@@ -7,15 +7,11 @@ export const RegisterForm = (props) => {
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ city: 'Moscow' })
 	};
-	fetch('http://kinkyapi.alevi.space/api/user/add', requestOptions)
-		.then(response => response.json())
-		.then(data => this.setState({ postId: data.id }));
-
 
 	function handleRegistrationForm(event){
 		event.preventDefault();
 		console.log('hi');
-		fetch('http://kinkyapi.alevi.space/api/user/add', requestOptions)
+		fetch('https://kinkyapi.alevi.space/api/user/add', requestOptions)
 			.then(response => response.json())
 			.then(data => console.log(data));
 	}
