@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class LanguageController extends Controller
 {
+
+    public function getLang($request)
+    {
+       return Language::all('page', 'attribute', $request);
+    }
     /**
      * Display a listing of the resource.
      *

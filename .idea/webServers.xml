@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="df779033-c16f-4b52-84cf-a3424d84fa73" name="kinky on simple">
+        <fileTransfer rootFolder="/root/kinky" accessType="SFTP" host="23.88.113.83" port="22" sshConfigId="28565410-04fe-4995-a934-af88d00e7ab0" sshConfig="gosimple">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

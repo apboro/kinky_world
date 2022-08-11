@@ -20,3 +20,4 @@ Route::apiResources([
     'users' => \App\Http\Controllers\UserController::class,
     'languages' =>\App\Http\Controllers\LanguageController::class,
 ]);
+Route::get('/languages/{language}', [\App\Http\Controllers\LanguageController::class, 'getLang']);
