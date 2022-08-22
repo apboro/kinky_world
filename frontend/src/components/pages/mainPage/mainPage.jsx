@@ -1,6 +1,7 @@
 import React, {useState, useEffect}  from 'react';
 import style from './mainPage.module.css';
 import { RegisterForm } from './registerForm/registerForm';
+import { LoginForm } from './loginForm/loginForm'
 
 export const MainPage = (props) => {
 	const [users, setUsers] = useState('pups');
@@ -19,6 +20,7 @@ export const MainPage = (props) => {
 			{/*{users.map((u)=>(<li>kuk</li>))}*/}
 			<div className={`${style.blue}`}>
 				<RegisterForm />
+				<LoginForm/>
 			</div>
 			<div className={`${style.green}`}>2
 				<button value="submit" onClick={handleClick}>Click Me</button>
